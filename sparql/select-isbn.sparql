@@ -1,0 +1,4 @@
+select distinct ?book, ?isbn, ?title where {
+    ?book <http://dbpedia.org/ontology/isbn> ?isbn FILTER regex(?isbn, "ISBN(?:-13)?:?\\x20*(?=.{17}$)97(?:8|9)([-])\\d{1,5}\\1\\d{1,7}\\1\\d{1,6}\\1\\d$")
+    ?book <http://www.w3.org/2000/01/rdf-schema#label> ?title FILTER LANGMATCHES(lang(?title), "EN")
+} LIMIT 10000

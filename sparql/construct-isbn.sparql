@@ -1,0 +1,10 @@
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dbpedia-onto: <http://dbpedia.org/ontology/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+CONSTRUCT { 
+  ?book rdfs:label ?title .
+  ?book dbpedia-onto:isbn ?isbn .
+} WHERE {
+  ?book <http://dbpedia.org/ontology/isbn> ?isbn FILTER regex(?isbn, "ISBN(?:-13)?:?\\x20*(?=.{17}$)97(?:8|9)([-])\\d{1,5}\\1\\d{1,7}\\1\\d{1,6}\\1\\d$") .
+  ?book <http://www.w3.org/2000/01/rdf-schema#label> ?title FILTER LANGMATCHES(lang(?title), "EN") .
+} ORDER BY DESC ( <LONG::IRI_RANK> (?book) ) LIMIT 1000
