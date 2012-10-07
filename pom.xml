@@ -16,5 +16,6 @@
   <inceptionYear>2012</inceptionYear>
   <modules>
     <module>stanbol-isbn-engine</module>
+    <module>stanbol-isbn-engine-skeleton</module>
   </modules>
 </project>
