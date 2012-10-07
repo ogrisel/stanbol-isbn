@@ -14,9 +14,9 @@
   <artifactId>stanbol-isbn-engine</artifactId>
   <packaging>bundle</packaging>
 
-  <name>Stanbol ISBN Enhancement Enginge</name>
+  <name>Stanbol ISBN Enhancement Engine</name>
   <description>
-    Sample Enhancement Engine for detecting ISBN code in text documents.
+    Sample Enhancement Engine for detecting ISBN-13 code in text documents.
   </description>
 
   <inceptionYear>2012</inceptionYear>
