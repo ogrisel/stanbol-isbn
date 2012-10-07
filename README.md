@@ -3,19 +3,23 @@
 Hands on tutorial material for learning to customize a Stanbol server.
 
 
-## Exercise 1: Indexing an RDF database of ISBN with the Entity Hub
+## Exercise 1: Indexing an RDF database of ISBN codes with the Entity Hub
 
-Build and package a bundle to ship the content of the data folder (a small RDF
-databse of ISBN for some famous books) as an Entity Hub referenced site:
+Build and package a bundle to ship the content of the `data` folder
+(a small RDF databse of ISBN for some famous books) as a "Referenced
+Site" for the Stanbol "Entity Hub" component.
 
 This can be done by following the first section of the instructions
 online documentation on [Working with Custom Vocabularies](
 http://stanbol.apache.org/docs/trunk/customvocabulary.html).
 
-Examples of working configuration files can be found in the `indexing-config`
-subfolder.
+Examples of working configuration files can be found in the
+`indexing-config` subfolder.
 
-Check that you can use the Web interface and the REST API of the
+Deploy the content of the resulting `indexing/dist` folder on your
+own Stanbol server as explained in the instructions.
+
+Check that you can use the web interface and the REST API of the
 referenced site to query the database to find some of the books by
 name or by ISBN.
 
@@ -24,15 +28,14 @@ name or by ISBN.
 
 Configure a new Keyword Linking enhancement engine on Stanbol and
 make it use the `dbp-ont:isbn` property and the newly registered
-referenced site of "Exerice 1".
+referenced site of "Exercise 1".
 
-This can be done by following the intructions of the second part of the online
-documentation on [Working with Custom Vocabularies](
+This can be done by following the intructions of the second part
+of the online documentation on [Working with Custom Vocabularies](
 http://stanbol.apache.org/docs/trunk/customvocabulary.html).
 
 Test it by configuring a new `List Chain` component configuration
-in the felix console of the stanbol server where the configuration
-is deployed.
+in the system console of your Stanbol server.
 
 
 ## Exercise 3: Unknow ISBN detection with a custom Enhancement Engine
