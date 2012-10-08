@@ -39,7 +39,7 @@ Test it by configuring a new `List Chain` component configuration
 in the system console of your Stanbol server.
 
 
-## Exercise 3: Unknow ISBN detection with a custom Enhancement Engine
+## Exercise 3: Unknown ISBN detection with a custom Enhancement Engine
 
 Install maven and then build the current project with:
 
