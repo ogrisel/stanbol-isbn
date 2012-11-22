@@ -102,3 +102,16 @@ web interface or using the REST API.
 
 The solution for this exercise is available in the `stanbol-isbn-engine`
 folder.
+
+
+## Licenses
+
+- Code examples are available for reuse under the
+  [Apache Software License](http://www.apache.org/licenses/LICENSE-2.0)
+
+- This short documentation is available under Creative Commons
+  Attribution 3.0.
+
+- The DBpedia data extract is available under the original license
+  (Creative Commons Attribution-ShareAlike 3.0 License and the GNU Free
+  Documentation License).
